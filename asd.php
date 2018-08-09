@@ -1504,6 +1504,6 @@ $('.check-box').on('click', function () {
     border-radius: 100%;
 }
 .checkedRadio i {
-    background-color: #898A8C;
+    background-color: #898A8C; 
 }
 </style>
