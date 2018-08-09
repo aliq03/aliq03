@@ -1,0 +1,2050 @@
+/**
+ * aliq Appbar
+ */
+.aliq--appbar-height {
+  height: 56px;
+}
+
+.aliq--appbar-min-height, .aliq-appbar {
+  min-height: 56px;
+}
+
+.aliq--appbar-line-height {
+  line-height: 56px;
+}
+
+.aliq--appbar-top {
+  top: 56px;
+}
+
+@media (orientation: landscape) and (max-height: 480px) {
+  .aliq--appbar-height {
+    height: 48px;
+  }
+  .aliq--appbar-min-height, .aliq-appbar {
+    min-height: 48px;
+  }
+  .aliq--appbar-line-height {
+    line-height: 48px;
+  }
+  .aliq--appbar-top {
+    top: 48px;
+  }
+}
+
+@media (min-width: 480px) {
+  .aliq--appbar-height {
+    height: 64px;
+  }
+  .aliq--appbar-min-height, .aliq-appbar {
+    min-height: 64px;
+  }
+  .aliq--appbar-line-height {
+    line-height: 64px;
+  }
+  .aliq--appbar-top {
+    top: 64px;
+  }
+}
+
+.aliq-appbar {
+  background-color: #2196F3;
+  color: #FFF;
+}
+
+/**
+ * aliq Buttons
+ */
+.aliq-btn {
+  animation-duration: 0.0001s;
+  animation-name: aliq-node-inserted;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #FFF;
+  transition: all 0.2s ease-in-out;
+  display: inline-block;
+  height: 36px;
+  padding: 0 26px;
+  margin-top: 6px;
+  margin-bottom: 6px;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  -ms-touch-action: manipulation;
+  touch-action: manipulation;
+  background-image: none;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+  white-space: nowrap;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-size: 14px;
+  letter-spacing: 0.03em;
+  position: relative;
+  overflow: hidden;
+}
+
+.aliq-btn:hover, .aliq-btn:focus, .aliq-btn:active {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: white;
+}
+
+.aliq-btn[disabled]:hover, .aliq-btn[disabled]:focus, .aliq-btn[disabled]:active {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #FFF;
+}
+
+.aliq-btn.aliq-btn--flat {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: transparent;
+}
+
+.aliq-btn.aliq-btn--flat:hover, .aliq-btn.aliq-btn--flat:focus, .aliq-btn.aliq-btn--flat:active {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #f2f2f2;
+}
+
+.aliq-btn.aliq-btn--flat[disabled]:hover, .aliq-btn.aliq-btn--flat[disabled]:focus, .aliq-btn.aliq-btn--flat[disabled]:active {
+  color: rgba(0, 0, 0, 0.87);
+  background-color: transparent;
+}
+
+.aliq-btn:hover, .aliq-btn:focus, .aliq-btn:active {
+  outline: 0;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.aliq-btn:hover, .aliq-btn:focus {
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .aliq-btn:hover, .aliq-btn:focus {
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.12), -1px 0px 2px rgba(0, 0, 0, 0.12), 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.aliq-btn:active:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .aliq-btn:active:hover {
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.12), -1px 0px 2px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+
+.aliq-btn:disabled, .aliq-btn.aliq--is-disabled {
+  cursor: not-allowed;
+  pointer-events: none;
+  opacity: 0.60;
+  box-shadow: none;
+}
+
+.aliq-btn + .aliq-btn {
+  margin-left: 8px;
+}
+
+.aliq-btn--flat {
+  background-color: transparent;
+}
+
+.aliq-btn--flat:hover, .aliq-btn--flat:focus, .aliq-btn--flat:active, .aliq-btn--flat:active:hover {
+  box-shadow: none;
+  background-color: #f2f2f2;
+}
+
+.aliq-btn--raised, .aliq-btn--fab {
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .aliq-btn--raised, .aliq-btn--fab {
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.12), -1px 0px 2px rgba(0, 0, 0, 0.12), 0 0px 2px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.2);
+  }
+}
+
+.aliq-btn--raised:active, .aliq-btn--fab:active {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .aliq-btn--raised:active, .aliq-btn--fab:active {
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.12), -1px 0px 2px rgba(0, 0, 0, 0.12), 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  }
+}
+
+.aliq-btn--fab {
+  position: relative;
+  padding: 0;
+  width: 55px;
+  height: 55px;
+  line-height: 55px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.aliq-btn--primary {
+  color: #FFF;
+  background-color: #2196F3;
+}
+
+.aliq-btn--primary:hover, .aliq-btn--primary:focus, .aliq-btn--primary:active {
+  color: #FFF;
+  background-color: #39a1f4;
+}
+
+.aliq-btn--primary[disabled]:hover, .aliq-btn--primary[disabled]:focus, .aliq-btn--primary[disabled]:active {
+  color: #FFF;
+  background-color: #2196F3;
+}
+
+.aliq-btn--primary.aliq-btn--flat {
+  color: #2196F3;
+  background-color: transparent;
+}
+
+.aliq-btn--primary.aliq-btn--flat:hover, .aliq-btn--primary.aliq-btn--flat:focus, .aliq-btn--primary.aliq-btn--flat:active {
+  color: #2196F3;
+  background-color: #f2f2f2;
+}
+
+.aliq-btn--primary.aliq-btn--flat[disabled]:hover, .aliq-btn--primary.aliq-btn--flat[disabled]:focus, .aliq-btn--primary.aliq-btn--flat[disabled]:active {
+  color: #2196F3;
+  background-color: transparent;
+}
+
+.aliq-btn--dark {
+  color: #FFF;
+  background-color: #424242;
+}
+
+.aliq-btn--dark:hover, .aliq-btn--dark:focus, .aliq-btn--dark:active {
+  color: #FFF;
+  background-color: #4f4f4f;
+}
+
+.aliq-btn--dark[disabled]:hover, .aliq-btn--dark[disabled]:focus, .aliq-btn--dark[disabled]:active {
+  color: #FFF;
+  background-color: #424242;
+}
+
+.aliq-btn--dark.aliq-btn--flat {
+  color: #424242;
+  background-color: transparent;
+}
+
+.aliq-btn--dark.aliq-btn--flat:hover, .aliq-btn--dark.aliq-btn--flat:focus, .aliq-btn--dark.aliq-btn--flat:active {
+  color: #424242;
+  background-color: #f2f2f2;
+}
+
+.aliq-btn--dark.aliq-btn--flat[disabled]:hover, .aliq-btn--dark.aliq-btn--flat[disabled]:focus, .aliq-btn--dark.aliq-btn--flat[disabled]:active {
+  color: #424242;
+  background-color: transparent;
+}
+
+.aliq-btn--danger {
+  color: #FFF;
+  background-color: #F44336;
+}
+
+.aliq-btn--danger:hover, .aliq-btn--danger:focus, .aliq-btn--danger:active {
+  color: #FFF;
+  background-color: #f55a4e;
+}
+
+.aliq-btn--danger[disabled]:hover, .aliq-btn--danger[disabled]:focus, .aliq-btn--danger[disabled]:active {
+  color: #FFF;
+  background-color: #F44336;
+}
+
+.aliq-btn--danger.aliq-btn--flat {
+  color: #F44336;
+  background-color: transparent;
+}
+
+.aliq-btn--danger.aliq-btn--flat:hover, .aliq-btn--danger.aliq-btn--flat:focus, .aliq-btn--danger.aliq-btn--flat:active {
+  color: #F44336;
+  background-color: #f2f2f2;
+}
+
+.aliq-btn--danger.aliq-btn--flat[disabled]:hover, .aliq-btn--danger.aliq-btn--flat[disabled]:focus, .aliq-btn--danger.aliq-btn--flat[disabled]:active {
+  color: #F44336;
+  background-color: transparent;
+}
+
+.aliq-btn--accent {
+  color: #FFF;
+  background-color: #FF4081;
+}
+
+.aliq-btn--accent:hover, .aliq-btn--accent:focus, .aliq-btn--accent:active {
+  color: #FFF;
+  background-color: #ff5a92;
+}
+
+.aliq-btn--accent[disabled]:hover, .aliq-btn--accent[disabled]:focus, .aliq-btn--accent[disabled]:active {
+  color: #FFF;
+  background-color: #FF4081;
+}
+
+.aliq-btn--accent.aliq-btn--flat {
+  color: #FF4081;
+  background-color: transparent;
+}
+
+.aliq-btn--accent.aliq-btn--flat:hover, .aliq-btn--accent.aliq-btn--flat:focus, .aliq-btn--accent.aliq-btn--flat:active {
+  color: #FF4081;
+  background-color: #f2f2f2;
+}
+
+.aliq-btn--accent.aliq-btn--flat[disabled]:hover, .aliq-btn--accent.aliq-btn--flat[disabled]:focus, .aliq-btn--accent.aliq-btn--flat[disabled]:active {
+  color: #FF4081;
+  background-color: transparent;
+}
+
+.aliq-btn--small {
+  height: 30.6px;
+  line-height: 30.6px;
+  padding: 0 16px;
+  font-size: 13px;
+}
+
+.aliq-btn--large {
+  height: 54px;
+  line-height: 54px;
+  padding: 0 26px;
+  font-size: 14px;
+}
+
+.aliq-btn--fab.aliq-btn--small {
+  width: 44px;
+  height: 44px;
+  line-height: 44px;
+}
+
+.aliq-btn--fab.aliq-btn--large {
+  width: 75px;
+  height: 75px;
+  line-height: 75px;
+}
+
+/**
+ * aliq Checkboxe and Radio Components
+ */
+.aliq-radio,
+.aliq-checkbox {
+  position: relative;
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.aliq-radio > label,
+.aliq-checkbox > label {
+  min-height: 20px;
+  padding-left: 20px;
+  margin-bottom: 0;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.aliq-radio > label > input[type="radio"],
+.aliq-radio--inline > label > input[type="radio"],
+.aliq-checkbox > label > input[type="checkbox"],
+.aliq-checkbox--inline > label > input[type="checkbox"] {
+  position: absolute;
+  margin-left: -20px;
+  margin-top: 4px;
+}
+
+.aliq-radio + .aliq-radio,
+.aliq-checkbox + .aliq-checkbox {
+  margin-top: -5px;
+}
+
+.aliq-radio--inline,
+.aliq-checkbox--inline {
+  display: inline-block;
+  padding-left: 20px;
+  margin-bottom: 0;
+  vertical-align: middle;
+  font-weight: normal;
+  cursor: pointer;
+}
+
+.aliq-radio--inline > input[type="radio"],
+.aliq-radio--inline > input[type="checkbox"],
+.aliq-radio--inline > label > input[type="radio"],
+.aliq-radio--inline > label > input[type="checkbox"],
+.aliq-checkbox--inline > input[type="radio"],
+.aliq-checkbox--inline > input[type="checkbox"],
+.aliq-checkbox--inline > label > input[type="radio"],
+.aliq-checkbox--inline > label > input[type="checkbox"] {
+  margin: 4px 0 0;
+  line-height: normal;
+}
+
+.aliq-radio--inline + .aliq-radio--inline,
+.aliq-checkbox--inline + .aliq-checkbox--inline {
+  margin-top: 0;
+  margin-left: 10px;
+}
+
+/**
+ * aliq Container module
+ */
+.aliq-container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.aliq-container:before, .aliq-container:after {
+  content: " ";
+  display: table;
+}
+
+.aliq-container:after {
+  clear: both;
+}
+
+@media (min-width: 544px) {
+  .aliq-container {
+    max-width: 570px;
+  }
+}
+
+@media (min-width: 768px) {
+  .aliq-container {
+    max-width: 740px;
+  }
+}
+
+@media (min-width: 992px) {
+  .aliq-container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .aliq-container {
+    max-width: 1170px;
+  }
+}
+
+.aliq-container-fluid {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.aliq-container-fluid:before, .aliq-container-fluid:after {
+  content: " ";
+  display: table;
+}
+
+.aliq-container-fluid:after {
+  clear: both;
+}
+
+/**
+ * aliq Divider Component and CSS Helpers
+ */
+.aliq-divider {
+  display: block;
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.12);
+}
+
+.aliq--divider-top {
+  border-top: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.aliq--divider-bottom {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.aliq--divider-left {
+  border-left: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.aliq--divider-right {
+  border-right: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/**
+ * aliq Dropdown module
+ */
+.aliq-dropdown {
+  display: inline-block;
+  position: relative;
+}
+
+[data-aliq-toggle="dropdown"] {
+  animation-duration: 0.0001s;
+  animation-name: aliq-node-inserted;
+  outline: 0;
+}
+
+.aliq-dropdown__menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  min-width: 160px;
+  padding: 5px 0;
+  margin: 2px 0 0;
+  list-style: none;
+  font-size: 14px;
+  text-align: left;
+  background-color: #FFF;
+  border-radius: 2px;
+  z-index: 1;
+  background-clip: padding-box;
+}
+
+.aliq-dropdown__menu.aliq--is-open {
+  display: block;
+}
+
+.aliq-dropdown__menu > li > a {
+  display: block;
+  padding: 3px 20px;
+  clear: both;
+  font-weight: normal;
+  line-height: 1.429;
+  color: rgba(0, 0, 0, 0.87);
+  white-space: nowrap;
+}
+
+.aliq-dropdown__menu > li > a:hover, .aliq-dropdown__menu > li > a:focus {
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.87);
+  background-color: #EEEEEE;
+}
+
+.aliq-dropdown__menu > .aliq--is-disabled > a, .aliq-dropdown__menu > .aliq--is-disabled > a:hover, .aliq-dropdown__menu > .aliq--is-disabled > a:focus {
+  color: #EEEEEE;
+}
+
+.aliq-dropdown__menu > .aliq--is-disabled > a:hover, .aliq-dropdown__menu > .aliq--is-disabled > a:focus {
+  text-decoration: none;
+  background-color: transparent;
+  background-image: none;
+  cursor: not-allowed;
+}
+
+.aliq-dropdown__menu--right {
+  left: auto;
+  right: 0;
+}
+
+/**
+ * aliq Form Component
+ */
+@media (min-width: 544px) {
+  .aliq-form--inline > .aliq-textfield {
+    display: inline-block;
+    margin-bottom: 0;
+  }
+  .aliq-form--inline > .aliq-radio,
+  .aliq-form--inline > .aliq-checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .aliq-form--inline > .aliq-radio > label,
+  .aliq-form--inline > .aliq-checkbox > label {
+    padding-left: 0;
+  }
+  .aliq-form--inline > .aliq-radio > label > input[type="radio"],
+  .aliq-form--inline > .aliq-checkbox > label > input[type="checkbox"] {
+    position: relative;
+    margin-left: 0;
+  }
+  .aliq-form--inline > .aliq-select {
+    display: inline-block;
+  }
+  .aliq-form--inline > .aliq-btn {
+    margin-bottom: 0;
+    margin-top: 0;
+    vertical-align: bottom;
+  }
+}
+
+/**
+ * aliq Grid module
+ */
+.aliq-row {
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.aliq-row:before, .aliq-row:after {
+  content: " ";
+  display: table;
+}
+
+.aliq-row:after {
+  clear: both;
+}
+
+.aliq-col-xs-1, .aliq-col-sm-1, .aliq-col-md-1, .aliq-col-lg-1, .aliq-col-xs-2, .aliq-col-sm-2, .aliq-col-md-2, .aliq-col-lg-2, .aliq-col-xs-3, .aliq-col-sm-3, .aliq-col-md-3, .aliq-col-lg-3, .aliq-col-xs-4, .aliq-col-sm-4, .aliq-col-md-4, .aliq-col-lg-4, .aliq-col-xs-5, .aliq-col-sm-5, .aliq-col-md-5, .aliq-col-lg-5, .aliq-col-xs-6, .aliq-col-sm-6, .aliq-col-md-6, .aliq-col-lg-6, .aliq-col-xs-7, .aliq-col-sm-7, .aliq-col-md-7, .aliq-col-lg-7, .aliq-col-xs-8, .aliq-col-sm-8, .aliq-col-md-8, .aliq-col-lg-8, .aliq-col-xs-9, .aliq-col-sm-9, .aliq-col-md-9, .aliq-col-lg-9, .aliq-col-xs-10, .aliq-col-sm-10, .aliq-col-md-10, .aliq-col-lg-10, .aliq-col-xs-11, .aliq-col-sm-11, .aliq-col-md-11, .aliq-col-lg-11, .aliq-col-xs-12, .aliq-col-sm-12, .aliq-col-md-12, .aliq-col-lg-12 {
+  min-height: 1px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.aliq-col-xs-1, .aliq-col-xs-2, .aliq-col-xs-3, .aliq-col-xs-4, .aliq-col-xs-5, .aliq-col-xs-6, .aliq-col-xs-7, .aliq-col-xs-8, .aliq-col-xs-9, .aliq-col-xs-10, .aliq-col-xs-11, .aliq-col-xs-12 {
+  float: left;
+}
+
+.aliq-col-xs-1 {
+  width: 8.33333%;
+}
+
+.aliq-col-xs-2 {
+  width: 16.66667%;
+}
+
+.aliq-col-xs-3 {
+  width: 25%;
+}
+
+.aliq-col-xs-4 {
+  width: 33.33333%;
+}
+
+.aliq-col-xs-5 {
+  width: 41.66667%;
+}
+
+.aliq-col-xs-6 {
+  width: 50%;
+}
+
+.aliq-col-xs-7 {
+  width: 58.33333%;
+}
+
+.aliq-col-xs-8 {
+  width: 66.66667%;
+}
+
+.aliq-col-xs-9 {
+  width: 75%;
+}
+
+.aliq-col-xs-10 {
+  width: 83.33333%;
+}
+
+.aliq-col-xs-11 {
+  width: 91.66667%;
+}
+
+.aliq-col-xs-12 {
+  width: 100%;
+}
+
+.aliq-col-xs-offset-0 {
+  margin-left: 0%;
+}
+
+.aliq-col-xs-offset-1 {
+  margin-left: 8.33333%;
+}
+
+.aliq-col-xs-offset-2 {
+  margin-left: 16.66667%;
+}
+
+.aliq-col-xs-offset-3 {
+  margin-left: 25%;
+}
+
+.aliq-col-xs-offset-4 {
+  margin-left: 33.33333%;
+}
+
+.aliq-col-xs-offset-5 {
+  margin-left: 41.66667%;
+}
+
+.aliq-col-xs-offset-6 {
+  margin-left: 50%;
+}
+
+.aliq-col-xs-offset-7 {
+  margin-left: 58.33333%;
+}
+
+.aliq-col-xs-offset-8 {
+  margin-left: 66.66667%;
+}
+
+.aliq-col-xs-offset-9 {
+  margin-left: 75%;
+}
+
+.aliq-col-xs-offset-10 {
+  margin-left: 83.33333%;
+}
+
+.aliq-col-xs-offset-11 {
+  margin-left: 91.66667%;
+}
+
+.aliq-col-xs-offset-12 {
+  margin-left: 100%;
+}
+
+@media (min-width: 544px) {
+  .aliq-col-sm-1, .aliq-col-sm-2, .aliq-col-sm-3, .aliq-col-sm-4, .aliq-col-sm-5, .aliq-col-sm-6, .aliq-col-sm-7, .aliq-col-sm-8, .aliq-col-sm-9, .aliq-col-sm-10, .aliq-col-sm-11, .aliq-col-sm-12 {
+    float: left;
+  }
+  .aliq-col-sm-1 {
+    width: 8.33333%;
+  }
+  .aliq-col-sm-2 {
+    width: 16.66667%;
+  }
+  .aliq-col-sm-3 {
+    width: 25%;
+  }
+  .aliq-col-sm-4 {
+    width: 33.33333%;
+  }
+  .aliq-col-sm-5 {
+    width: 41.66667%;
+  }
+  .aliq-col-sm-6 {
+    width: 50%;
+  }
+  .aliq-col-sm-7 {
+    width: 58.33333%;
+  }
+  .aliq-col-sm-8 {
+    width: 66.66667%;
+  }
+  .aliq-col-sm-9 {
+    width: 75%;
+  }
+  .aliq-col-sm-10 {
+    width: 83.33333%;
+  }
+  .aliq-col-sm-11 {
+    width: 91.66667%;
+  }
+  .aliq-col-sm-12 {
+    width: 100%;
+  }
+  .aliq-col-sm-offset-0 {
+    margin-left: 0%;
+  }
+  .aliq-col-sm-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .aliq-col-sm-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .aliq-col-sm-offset-3 {
+    margin-left: 25%;
+  }
+  .aliq-col-sm-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .aliq-col-sm-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .aliq-col-sm-offset-6 {
+    margin-left: 50%;
+  }
+  .aliq-col-sm-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .aliq-col-sm-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .aliq-col-sm-offset-9 {
+    margin-left: 75%;
+  }
+  .aliq-col-sm-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .aliq-col-sm-offset-11 {
+    margin-left: 91.66667%;
+  }
+  .aliq-col-sm-offset-12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 768px) {
+  .aliq-col-md-1, .aliq-col-md-2, .aliq-col-md-3, .aliq-col-md-4, .aliq-col-md-5, .aliq-col-md-6, .aliq-col-md-7, .aliq-col-md-8, .aliq-col-md-9, .aliq-col-md-10, .aliq-col-md-11, .aliq-col-md-12 {
+    float: left;
+  }
+  .aliq-col-md-1 {
+    width: 8.33333%;
+  }
+  .aliq-col-md-2 {
+    width: 16.66667%;
+  }
+  .aliq-col-md-3 {
+    width: 25%;
+  }
+  .aliq-col-md-4 {
+    width: 33.33333%;
+  }
+  .aliq-col-md-5 {
+    width: 41.66667%;
+  }
+  .aliq-col-md-6 {
+    width: 50%;
+  }
+  .aliq-col-md-7 {
+    width: 58.33333%;
+  }
+  .aliq-col-md-8 {
+    width: 66.66667%;
+  }
+  .aliq-col-md-9 {
+    width: 75%;
+  }
+  .aliq-col-md-10 {
+    width: 83.33333%;
+  }
+  .aliq-col-md-11 {
+    width: 91.66667%;
+  }
+  .aliq-col-md-12 {
+    width: 100%;
+  }
+  .aliq-col-md-offset-0 {
+    margin-left: 0%;
+  }
+  .aliq-col-md-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .aliq-col-md-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .aliq-col-md-offset-3 {
+    margin-left: 25%;
+  }
+  .aliq-col-md-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .aliq-col-md-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .aliq-col-md-offset-6 {
+    margin-left: 50%;
+  }
+  .aliq-col-md-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .aliq-col-md-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .aliq-col-md-offset-9 {
+    margin-left: 75%;
+  }
+  .aliq-col-md-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .aliq-col-md-offset-11 {
+    margin-left: 91.66667%;
+  }
+  .aliq-col-md-offset-12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 992px) {
+  .aliq-col-lg-1, .aliq-col-lg-2, .aliq-col-lg-3, .aliq-col-lg-4, .aliq-col-lg-5, .aliq-col-lg-6, .aliq-col-lg-7, .aliq-col-lg-8, .aliq-col-lg-9, .aliq-col-lg-10, .aliq-col-lg-11, .aliq-col-lg-12 {
+    float: left;
+  }
+  .aliq-col-lg-1 {
+    width: 8.33333%;
+  }
+  .aliq-col-lg-2 {
+    width: 16.66667%;
+  }
+  .aliq-col-lg-3 {
+    width: 25%;
+  }
+  .aliq-col-lg-4 {
+    width: 33.33333%;
+  }
+  .aliq-col-lg-5 {
+    width: 41.66667%;
+  }
+  .aliq-col-lg-6 {
+    width: 50%;
+  }
+  .aliq-col-lg-7 {
+    width: 58.33333%;
+  }
+  .aliq-col-lg-8 {
+    width: 66.66667%;
+  }
+  .aliq-col-lg-9 {
+    width: 75%;
+  }
+  .aliq-col-lg-10 {
+    width: 83.33333%;
+  }
+  .aliq-col-lg-11 {
+    width: 91.66667%;
+  }
+  .aliq-col-lg-12 {
+    width: 100%;
+  }
+  .aliq-col-lg-offset-0 {
+    margin-left: 0%;
+  }
+  .aliq-col-lg-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .aliq-col-lg-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .aliq-col-lg-offset-3 {
+    margin-left: 25%;
+  }
+  .aliq-col-lg-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .aliq-col-lg-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .aliq-col-lg-offset-6 {
+    margin-left: 50%;
+  }
+  .aliq-col-lg-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .aliq-col-lg-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .aliq-col-lg-offset-9 {
+    margin-left: 75%;
+  }
+  .aliq-col-lg-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .aliq-col-lg-offset-11 {
+    margin-left: 91.66667%;
+  }
+  .aliq-col-lg-offset-12 {
+    margin-left: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .aliq-col-xl-1, .aliq-col-xl-2, .aliq-col-xl-3, .aliq-col-xl-4, .aliq-col-xl-5, .aliq-col-xl-6, .aliq-col-xl-7, .aliq-col-xl-8, .aliq-col-xl-9, .aliq-col-xl-10, .aliq-col-xl-11, .aliq-col-xl-12 {
+    float: left;
+  }
+  .aliq-col-xl-1 {
+    width: 8.33333%;
+  }
+  .aliq-col-xl-2 {
+    width: 16.66667%;
+  }
+  .aliq-col-xl-3 {
+    width: 25%;
+  }
+  .aliq-col-xl-4 {
+    width: 33.33333%;
+  }
+  .aliq-col-xl-5 {
+    width: 41.66667%;
+  }
+  .aliq-col-xl-6 {
+    width: 50%;
+  }
+  .aliq-col-xl-7 {
+    width: 58.33333%;
+  }
+  .aliq-col-xl-8 {
+    width: 66.66667%;
+  }
+  .aliq-col-xl-9 {
+    width: 75%;
+  }
+  .aliq-col-xl-10 {
+    width: 83.33333%;
+  }
+  .aliq-col-xl-11 {
+    width: 91.66667%;
+  }
+  .aliq-col-xl-12 {
+    width: 100%;
+  }
+  .aliq-col-xl-offset-0 {
+    margin-left: 0%;
+  }
+  .aliq-col-xl-offset-1 {
+    margin-left: 8.33333%;
+  }
+  .aliq-col-xl-offset-2 {
+    margin-left: 16.66667%;
+  }
+  .aliq-col-xl-offset-3 {
+    margin-left: 25%;
+  }
+  .aliq-col-xl-offset-4 {
+    margin-left: 33.33333%;
+  }
+  .aliq-col-xl-offset-5 {
+    margin-left: 41.66667%;
+  }
+  .aliq-col-xl-offset-6 {
+    margin-left: 50%;
+  }
+  .aliq-col-xl-offset-7 {
+    margin-left: 58.33333%;
+  }
+  .aliq-col-xl-offset-8 {
+    margin-left: 66.66667%;
+  }
+  .aliq-col-xl-offset-9 {
+    margin-left: 75%;
+  }
+  .aliq-col-xl-offset-10 {
+    margin-left: 83.33333%;
+  }
+  .aliq-col-xl-offset-11 {
+    margin-left: 91.66667%;
+  }
+  .aliq-col-xl-offset-12 {
+    margin-left: 100%;
+  }
+}
+
+/**
+ * aliq Panel module
+ */
+.aliq-panel {
+  padding: 15px;
+  margin-bottom: 20px;
+  border-radius: 0;
+  background-color: #FFF;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0px 2px 0 rgba(0, 0, 0, 0.12);
+}
+
+.aliq-panel:before, .aliq-panel:after {
+  content: " ";
+  display: table;
+}
+
+.aliq-panel:after {
+  clear: both;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .aliq-panel {
+    box-shadow: 0 -1px 2px 0 rgba(0, 0, 0, 0.12), -1px 0px 2px 0 rgba(0, 0, 0, 0.12), 0 2px 2px 0 rgba(0, 0, 0, 0.16), 0 0px 2px 0 rgba(0, 0, 0, 0.12);
+  }
+}
+
+/**
+ * aliq Select Component
+ */
+.aliq-select {
+  display: block;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.aliq-select:focus {
+  outline: 0;
+}
+
+.aliq-select:focus > select {
+  height: 33px;
+  margin-bottom: -1px;
+  border-color: #2196F3;
+  border-width: 2px;
+}
+
+.aliq-select > select {
+  animation-duration: 0.0001s;
+  animation-name: aliq-node-inserted;
+  display: block;
+  height: 32px;
+  width: 100%;
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+  border-radius: 0px;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iNiIgd2lkdGg9IjEwIj48cG9seWdvbiBwb2ludHM9IjAsMCAxMCwwIDUsNiIgc3R5bGU9ImZpbGw6cmdiYSgwLDAsMCwuMjQpOyIvPjwvc3ZnPg==");
+  background-repeat: no-repeat;
+  background-position: right center;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 16px;
+  padding: 0 25px 0 0;
+}
+
+.aliq-select > select::-ms-expand {
+  display: none;
+}
+
+.aliq-select > select:focus {
+  outline: 0;
+  height: 33px;
+  margin-bottom: -1px;
+  border-color: #2196F3;
+  border-width: 2px;
+}
+
+.aliq-select > select:disabled {
+  color: rgba(0, 0, 0, 0.38);
+  cursor: not-allowed;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.aliq-select > label {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.aliq-select:focus > label,
+.aliq-select > select:focus ~ label {
+  color: #2196F3;
+}
+
+.aliq-select__menu {
+  position: absolute;
+  z-index: 2;
+  min-width: 100%;
+  overflow-y: auto;
+  padding: 8px 0;
+  background-color: #FFF;
+  font-size: 16px;
+}
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  .aliq-select__menu {
+    border-left: 1px solid rgba(0, 0, 0, 0.12);
+    border-top: 1px solid rgba(0, 0, 0, 0.12);
+  }
+}
+
+.aliq-select__menu > div {
+  padding: 0 22px;
+  height: 42px;
+  line-height: 42px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.aliq-select__menu > div:hover {
+  background-color: #E0E0E0;
+}
+
+.aliq-select__menu > div.aliq--is-selected {
+  background-color: #EEEEEE;
+}
+
+/**
+ * aliq Table Component
+ */
+th {
+  text-align: left;
+}
+
+.aliq-table {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 20px;
+}
+
+.aliq-table > thead > tr > th,
+.aliq-table > thead > tr > td,
+.aliq-table > tbody > tr > th,
+.aliq-table > tbody > tr > td,
+.aliq-table > tfoot > tr > th,
+.aliq-table > tfoot > tr > td {
+  padding: 10px;
+  line-height: 1.429;
+}
+
+.aliq-table > thead > tr > th {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+  font-weight: 700;
+}
+
+.aliq-table > tbody + tbody {
+  border-top: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.aliq-table.aliq-table--bordered > tbody > tr > td {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+/**
+ * aliq Tabs module
+ */
+.aliq-tabs__bar {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+  background-color: transparent;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+
+.aliq-tabs__bar > li {
+  display: inline-block;
+}
+
+.aliq-tabs__bar > li > a {
+  display: block;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  color: rgba(0, 0, 0, 0.87);
+  cursor: default;
+  height: 48px;
+  line-height: 48px;
+  padding-left: 24px;
+  padding-right: 24px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.aliq-tabs__bar > li > a:hover {
+  text-decoration: none;
+}
+
+.aliq-tabs__bar > li.aliq--is-active {
+  border-bottom: 2px solid #2196F3;
+}
+
+.aliq-tabs__bar > li.aliq--is-active > a {
+  color: #2196F3;
+}
+
+.aliq-tabs__bar.aliq-tabs__bar--justified {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+
+.aliq-tabs__bar.aliq-tabs__bar--justified > li {
+  display: table-cell;
+}
+
+.aliq-tabs__bar.aliq-tabs__bar--justified > li > a {
+  text-align: center;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.aliq-tabs__pane {
+  display: none;
+}
+
+.aliq-tabs__pane.aliq--is-active {
+  display: block;
+}
+
+[data-aliq-toggle="tab"] {
+  animation-duration: 0.0001s;
+  animation-name: aliq-node-inserted;
+}
+
+/**
+ * aliq Textfield Component
+ */
+.aliq-textfield {
+  display: block;
+  padding-top: 15px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.aliq-textfield > label {
+  position: absolute;
+  top: 0;
+  display: block;
+  width: 100%;
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 15px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.aliq-textfield > textarea {
+  padding-top: 5px;
+}
+
+.aliq-textfield > input,
+.aliq-textfield > textarea {
+  display: block;
+}
+
+.aliq-textfield > input:focus ~ label,
+.aliq-textfield > textarea:focus ~ label {
+  color: #2196F3;
+}
+
+.aliq-textfield--float-label > label {
+  position: absolute;
+  transform: translate(0px, 15px);
+  font-size: 16px;
+  line-height: 32px;
+  color: rgba(0, 0, 0, 0.26);
+  text-overflow: clip;
+  cursor: text;
+  pointer-events: none;
+}
+
+.aliq-textfield--float-label > input:focus ~ label,
+.aliq-textfield--float-label > textarea:focus ~ label {
+  transform: translate(0px, 0px);
+  font-size: 12px;
+  line-height: 15px;
+  text-overflow: ellipsis;
+}
+
+.aliq-textfield--float-label > input:not(:focus).aliq--is-not-empty ~ label, .aliq-textfield--float-label > input:not(:focus)[value]:not([value=""]):not(.aliq--is-empty):not(.aliq--is-not-empty) ~ label, .aliq-textfield--float-label > input:not(:focus):not(:empty):not(.aliq--is-empty):not(.aliq--is-not-empty) ~ label,
+.aliq-textfield--float-label > textarea:not(:focus).aliq--is-not-empty ~ label,
+.aliq-textfield--float-label > textarea:not(:focus)[value]:not([value=""]):not(.aliq--is-empty):not(.aliq--is-not-empty) ~ label,
+.aliq-textfield--float-label > textarea:not(:focus):not(:empty):not(.aliq--is-empty):not(.aliq--is-not-empty) ~ label {
+  color: rgba(0, 0, 0, 0.54);
+  font-size: 12px;
+  line-height: 15px;
+  transform: translate(0px, 0px);
+  text-overflow: ellipsis;
+}
+
+.aliq-textfield--wrap-label {
+  display: table;
+  width: 100%;
+  padding-top: 0px;
+}
+
+.aliq-textfield--wrap-label:not(.aliq-textfield--float-label) > label {
+  display: table-header-group;
+  position: static;
+  white-space: normal;
+  overflow-x: visible;
+}
+
+.aliq-textfield > input,
+.aliq-textfield > textarea {
+  animation-duration: 0.0001s;
+  animation-name: aliq-node-inserted;
+  display: block;
+  background-color: transparent;
+  color: rgba(0, 0, 0, 0.87);
+  border: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.26);
+  outline: none;
+  width: 100%;
+  font-size: 16px;
+  padding: 0;
+  box-shadow: none;
+  border-radius: 0px;
+  background-image: none;
+}
+
+.aliq-textfield > input:focus,
+.aliq-textfield > textarea:focus {
+  border-color: #2196F3;
+  border-width: 2px;
+}
+
+.aliq-textfield > input:disabled, .aliq-textfield > input:-moz-read-only,
+.aliq-textfield > textarea:disabled,
+.aliq-textfield > textarea:-moz-read-only {
+  cursor: not-allowed;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.aliq-textfield > input:disabled, .aliq-textfield > input:read-only,
+.aliq-textfield > textarea:disabled,
+.aliq-textfield > textarea:read-only {
+  cursor: not-allowed;
+  background-color: transparent;
+  opacity: 1;
+}
+
+.aliq-textfield > input::-webkit-input-placeholder,
+.aliq-textfield > textarea::-webkit-input-placeholder {
+  color: rgba(0, 0, 0, 0.26);
+  opacity: 1;
+}
+
+.aliq-textfield > input::-moz-placeholder,
+.aliq-textfield > textarea::-moz-placeholder {
+  color: rgba(0, 0, 0, 0.26);
+  opacity: 1;
+}
+
+.aliq-textfield > input:-ms-input-placeholder,
+.aliq-textfield > textarea:-ms-input-placeholder {
+  color: rgba(0, 0, 0, 0.26);
+  opacity: 1;
+}
+
+.aliq-textfield > input::placeholder,
+.aliq-textfield > textarea::placeholder {
+  color: rgba(0, 0, 0, 0.26);
+  opacity: 1;
+}
+
+.aliq-textfield > input {
+  height: 32px;
+}
+
+.aliq-textfield > input:focus {
+  height: 33px;
+  margin-bottom: -1px;
+}
+
+.aliq-textfield > textarea {
+  min-height: 64px;
+}
+
+.aliq-textfield > textarea[rows]:not([rows="2"]):focus {
+  margin-bottom: -1px;
+}
+
+.aliq-textfield > input:focus {
+  height: 33px;
+  margin-bottom: -1px;
+}
+
+.aliq-textfield > input:invalid:not(:focus):not(:required), .aliq-textfield > input:invalid:not(:focus):required.aliq--is-not-empty, .aliq-textfield > input:invalid:not(:focus):required.aliq--is-empty.aliq--is-dirty, .aliq-textfield > input:invalid:not(:focus):required[value]:not([value=""]):not(.aliq--is-empty):not(.aliq--is-not-empty), .aliq-textfield > input:invalid:not(:focus):required:not(:empty):not(.aliq--is-empty):not(.aliq--is-not-empty),
+.aliq-textfield > textarea:invalid:not(:focus):not(:required),
+.aliq-textfield > textarea:invalid:not(:focus):required.aliq--is-not-empty,
+.aliq-textfield > textarea:invalid:not(:focus):required.aliq--is-empty.aliq--is-dirty,
+.aliq-textfield > textarea:invalid:not(:focus):required[value]:not([value=""]):not(.aliq--is-empty):not(.aliq--is-not-empty),
+.aliq-textfield > textarea:invalid:not(:focus):required:not(:empty):not(.aliq--is-empty):not(.aliq--is-not-empty),
+.aliq-textfield > input:not(:focus).aliq--is-invalid:not(:required),
+.aliq-textfield > input:not(:focus).aliq--is-invalid:required.aliq--is-not-empty,
+.aliq-textfield > input:not(:focus).aliq--is-invalid:required.aliq--is-empty.aliq--is-dirty,
+.aliq-textfield > input:not(:focus).aliq--is-invalid:required[value]:not([value=""]):not(.aliq--is-empty):not(.aliq--is-not-empty),
+.aliq-textfield > input:not(:focus).aliq--is-invalid:required:not(:empty):not(.aliq--is-empty):not(.aliq--is-not-empty),
+.aliq-textfield > textarea:not(:focus).aliq--is-invalid:not(:required),
+.aliq-textfield > textarea:not(:focus).aliq--is-invalid:required.aliq--is-not-empty,
+.aliq-textfield > textarea:not(:focus).aliq--is-invalid:required.aliq--is-empty.aliq--is-dirty,
+.aliq-textfield > textarea:not(:focus).aliq--is-invalid:required[value]:not([value=""]):not(.aliq--is-empty):not(.aliq--is-not-empty),
+.aliq-textfield > textarea:not(:focus).aliq--is-invalid:required:not(:empty):not(.aliq--is-empty):not(.aliq--is-not-empty) {
+  border-color: #F44336;
+  border-width: 2px;
+}
+
+.aliq-textfield > input:invalid:not(:focus):not(:required), .aliq-textfield > input:invalid:not(:focus):required.aliq--is-not-empty, .aliq-textfield > input:invalid:not(:focus):required.aliq--is-empty.aliq--is-dirty, .aliq-textfield > input:invalid:not(:focus):required[value]:not([value=""]):not(.aliq--is-empty):not(.aliq--is-not-empty), .aliq-textfield > input:invalid:not(:focus):required:not(:empty):not(.aliq--is-empty):not(.aliq--is-not-empty),
+.aliq-textfield > input:not(:focus).aliq--is-invalid:not(:required),
+.aliq-textfield > input:not(:focus).aliq--is-invalid:required.aliq--is-not-empty,
+.aliq-textfield > input:not(:focus).aliq--is-invalid:required.aliq--is-empty.aliq--is-dirty,
+.aliq-textfield > input:not(:focus).aliq--is-invalid:required[value]:not([value=""]):not(.aliq--is-empty):not(.aliq--is-not-empty),
+.aliq-textfield > input:not(:focus).aliq--is-invalid:required:not(:empty):not(.aliq--is-empty):not(.aliq--is-not-empty) {
+  height: 33px;
+  margin-bottom: -1px;
+}
+
+.aliq-textfield > input:invalid:not(:focus):not(:required) ~ label, .aliq-textfield > input:invalid:not(:focus):required.aliq--is-not-empty ~ label, .aliq-textfield > input:invalid:not(:focus):required[value]:not([value=""]):not(.aliq--is-empty):not(.aliq--is-not-empty) ~ label, .aliq-textfield > input:invalid:not(:focus):required:not(:empty):not(.aliq--is-empty):not(.aliq--is-not-empty) ~ label,
+.aliq-textfield > textarea:invalid:not(:focus):not(:required) ~ label,
+.aliq-textfield > textarea:invalid:not(:focus):required.aliq--is-not-empty ~ label,
+.aliq-textfield > textarea:invalid:not(:focus):required[value]:not([value=""]):not(.aliq--is-empty):not(.aliq--is-not-empty) ~ label,
+.aliq-textfield > textarea:invalid:not(:focus):required:not(:empty):not(.aliq--is-empty):not(.aliq--is-not-empty) ~ label,
+.aliq-textfield > input:not(:focus).aliq--is-invalid:not(:required) ~ label,
+.aliq-textfield > input:not(:focus).aliq--is-invalid:required.aliq--is-not-empty ~ label,
+.aliq-textfield > input:not(:focus).aliq--is-invalid:required[value]:not([value=""]):not(.aliq--is-empty):not(.aliq--is-not-empty) ~ label,
+.aliq-textfield > input:not(:focus).aliq--is-invalid:required:not(:empty):not(.aliq--is-empty):not(.aliq--is-not-empty) ~ label,
+.aliq-textfield > textarea:not(:focus).aliq--is-invalid:not(:required) ~ label,
+.aliq-textfield > textarea:not(:focus).aliq--is-invalid:required.aliq--is-not-empty ~ label,
+.aliq-textfield > textarea:not(:focus).aliq--is-invalid:required[value]:not([value=""]):not(.aliq--is-empty):not(.aliq--is-not-empty) ~ label,
+.aliq-textfield > textarea:not(:focus).aliq--is-invalid:required:not(:empty):not(.aliq--is-empty):not(.aliq--is-not-empty) ~ label {
+  color: #F44336;
+}
+
+.aliq-textfield:not(.aliq-textfield--float-label) > input:invalid:not(:focus):required.aliq--is-empty.aliq--is-dirty ~ label,
+.aliq-textfield:not(.aliq-textfield--float-label) > textarea:invalid:not(:focus):required.aliq--is-empty.aliq--is-dirty ~ label,
+.aliq-textfield:not(.aliq-textfield--float-label) > input:not(:focus).aliq--is-invalid:required.aliq--is-empty.aliq--is-dirty ~ label,
+.aliq-textfield:not(.aliq-textfield--float-label) > textarea:not(:focus).aliq--is-invalid:required.aliq--is-empty.aliq--is-dirty ~ label {
+  color: #F44336;
+}
+
+/**
+ * aliq Helpers module
+ */
+@keyframes aliq-node-inserted {
+  from {
+    opacity: 0.99;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.aliq--no-transition {
+  transition: none !important;
+}
+
+.aliq--no-user-select {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.aliq-caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px solid;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+
+.aliq--text-left {
+  text-align: left !important;
+}
+
+.aliq--text-right {
+  text-align: right !important;
+}
+
+.aliq--text-center {
+  text-align: center !important;
+}
+
+.aliq--text-justify {
+  text-align: justify !important;
+}
+
+.aliq--text-nowrap {
+  white-space: nowrap !important;
+}
+
+.aliq--align-baseline {
+  vertical-align: baseline !important;
+}
+
+.aliq--align-top {
+  vertical-align: top !important;
+}
+
+.aliq--align-middle {
+  vertical-align: middle !important;
+}
+
+.aliq--align-bottom {
+  vertical-align: bottom !important;
+}
+
+.aliq--text-dark {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.aliq--text-dark-secondary {
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.aliq--text-dark-hint {
+  color: rgba(0, 0, 0, 0.38);
+}
+
+.aliq--text-light {
+  color: #FFF;
+}
+
+.aliq--text-light-secondary {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.aliq--text-light-hint {
+  color: rgba(255, 255, 255, 0.3);
+}
+
+.aliq--text-accent {
+  color: rgba(255, 64, 129, 0.87);
+}
+
+.aliq--text-accent-secondary {
+  color: rgba(255, 64, 129, 0.54);
+}
+
+.aliq--text-accent-hint {
+  color: rgba(255, 64, 129, 0.38);
+}
+
+.aliq--text-black {
+  color: #000;
+}
+
+.aliq--text-white {
+  color: #FFF;
+}
+
+.aliq--text-danger {
+  color: #F44336;
+}
+
+.aliq--bg-primary {
+  background-color: #2196F3;
+}
+
+.aliq--bg-primary-dark {
+  background-color: #1976D2;
+}
+
+.aliq--bg-primary-light {
+  background-color: #BBDEFB;
+}
+
+.aliq--bg-accent {
+  background-color: #FF4081;
+}
+
+.aliq--bg-accent-dark {
+  background-color: #F50057;
+}
+
+.aliq--bg-accent-light {
+  background-color: #FF80AB;
+}
+
+.aliq--bg-danger {
+  background-color: #F44336;
+}
+
+.aliq-list--unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.aliq-list--inline {
+  padding-left: 0;
+  list-style: none;
+  margin-left: -5px;
+}
+
+.aliq-list--inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.aliq--z1, .aliq-dropdown__menu, .aliq-select__menu {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.aliq--z2 {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.aliq--z3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.aliq--z4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.aliq--z5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.aliq--clearfix:before, .aliq--clearfix:after {
+  content: " ";
+  display: table;
+}
+
+.aliq--clearfix:after {
+  clear: both;
+}
+
+.aliq--pull-right {
+  float: right !important;
+}
+
+.aliq--pull-left {
+  float: left !important;
+}
+
+.aliq--hide {
+  display: none !important;
+}
+
+.aliq--show {
+  display: block !important;
+}
+
+.aliq--invisible {
+  visibility: hidden;
+}
+
+.aliq--overflow-hidden {
+  overflow: hidden !important;
+}
+
+.aliq--overflow-hidden-x {
+  overflow-x: hidden !important;
+}
+
+.aliq--overflow-hidden-y {
+  overflow-y: hidden !important;
+}
+
+.aliq--visible-xs-block,
+.aliq--visible-xs-inline,
+.aliq--visible-xs-inline-block,
+.aliq--visible-sm-block,
+.aliq--visible-sm-inline,
+.aliq--visible-sm-inline-block,
+.aliq--visible-md-block,
+.aliq--visible-md-inline,
+.aliq--visible-md-inline-block,
+.aliq--visible-lg-block,
+.aliq--visible-lg-inline,
+.aliq--visible-lg-inline-block,
+.aliq--visible-xl-block,
+.aliq--visible-xl-inline,
+.aliq--visible-xl-inline-block {
+  display: none !important;
+}
+
+@media (max-width: 543px) {
+  .aliq-visible-xs {
+    display: block !important;
+  }
+  table.aliq-visible-xs {
+    display: table;
+  }
+  tr.aliq-visible-xs {
+    display: table-row !important;
+  }
+  th.aliq-visible-xs,
+  td.aliq-visible-xs {
+    display: table-cell !important;
+  }
+  .aliq--visible-xs-block {
+    display: block !important;
+  }
+  .aliq--visible-xs-inline {
+    display: inline !important;
+  }
+  .aliq--visible-xs-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+  .aliq-visible-sm {
+    display: block !important;
+  }
+  table.aliq-visible-sm {
+    display: table;
+  }
+  tr.aliq-visible-sm {
+    display: table-row !important;
+  }
+  th.aliq-visible-sm,
+  td.aliq-visible-sm {
+    display: table-cell !important;
+  }
+  .aliq--visible-sm-block {
+    display: block !important;
+  }
+  .aliq--visible-sm-inline {
+    display: inline !important;
+  }
+  .aliq--visible-sm-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .aliq-visible-md {
+    display: block !important;
+  }
+  table.aliq-visible-md {
+    display: table;
+  }
+  tr.aliq-visible-md {
+    display: table-row !important;
+  }
+  th.aliq-visible-md,
+  td.aliq-visible-md {
+    display: table-cell !important;
+  }
+  .aliq--visible-md-block {
+    display: block !important;
+  }
+  .aliq--visible-md-inline {
+    display: inline !important;
+  }
+  .aliq--visible-md-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .aliq-visible-lg {
+    display: block !important;
+  }
+  table.aliq-visible-lg {
+    display: table;
+  }
+  tr.aliq-visible-lg {
+    display: table-row !important;
+  }
+  th.aliq-visible-lg,
+  td.aliq-visible-lg {
+    display: table-cell !important;
+  }
+  .aliq--visible-lg-block {
+    display: block !important;
+  }
+  .aliq--visible-lg-inline {
+    display: inline !important;
+  }
+  .aliq--visible-lg-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .aliq-visible-xl {
+    display: block !important;
+  }
+  table.aliq-visible-xl {
+    display: table;
+  }
+  tr.aliq-visible-xl {
+    display: table-row !important;
+  }
+  th.aliq-visible-xl,
+  td.aliq-visible-xl {
+    display: table-cell !important;
+  }
+  .aliq--visible-xl-block {
+    display: block !important;
+  }
+  .aliq--visible-xl-inline {
+    display: inline !important;
+  }
+  .aliq--visible-xl-inline-block {
+    display: inline-block !important;
+  }
+}
+
+@media (max-width: 543px) {
+  .aliq--hidden-xs {
+    display: none !important;
+  }
+}
+
+@media (min-width: 544px) and (max-width: 767px) {
+  .aliq--hidden-sm {
+    display: none !important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .aliq--hidden-md {
+    display: none !important;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .aliq--hidden-lg {
+    display: none !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .aliq--hidden-xl {
+    display: none !important;
+  }
+}
+
+body.aliq-body--scroll-lock {
+  overflow: hidden !important;
+}
+
+/**
+ * aliq Overlay module
+ */
+#aliq-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999999;
+  background-color: rgba(0, 0, 0, 0.2);
+  overflow: auto;
+}
+
+/**
+ * aliq Ripple module
+ */
+.aliq-ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.4;
+  transform: scale(0.0001);
+}
+
+.aliq-ripple-effect.aliq--animate-in {
+  opacity: 0;
+  transform: scale(1);
+  transition: transform 0.3s cubic-bezier(0, 0, 0.2, 1), opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.aliq-ripple-effect.aliq--active {
+  opacity: 0.3;
+}
+
+.aliq-ripple-effect.aliq--animate-out {
+  opacity: 0;
+  transition: opacity 0.6s cubic-bezier(0, 0, 0.2, 1);
+}
+
+.aliq-btn > .aliq-ripple-effect {
+  background-color: #a6a6a6;
+}
+
+.aliq-btn--primary > .aliq-ripple-effect {
+  background-color: #FFF;
+}
+
+.aliq-btn--dark > .aliq-ripple-effect {
+  background-color: #FFF;
+}
+
+.aliq-btn--danger > .aliq-ripple-effect {
+  background-color: #FFF;
+}
+
+.aliq-btn--accent > .aliq-ripple-effect {
+  background-color: #FFF;
+}
+
+.aliq-btn--flat > .aliq-ripple-effect {
+  background-color: #a6a6a6;
+}
+
+/**
+ * aliq Typography module
+ */
+.aliq--text-display4 {
+  font-weight: 300;
+  font-size: 112px;
+  line-height: 112px;
+}
+
+.aliq--text-display3 {
+  font-weight: 400;
+  font-size: 56px;
+  line-height: 56px;
+}
+
+.aliq--text-display2 {
+  font-weight: 400;
+  font-size: 45px;
+  line-height: 48px;
+}
+
+.aliq--text-display1, h1 {
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 40px;
+}
+
+.aliq--text-headline, h2 {
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 32px;
+}
+
+.aliq--text-title, h3 {
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+}
+
+.aliq--text-subhead, h4 {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.aliq--text-body2, h5 {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.aliq--text-body1 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.aliq--text-caption {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.aliq--text-menu {
+  font-weight: 500;
+  font-size: 13px;
+  line-height: 17px;
+}
+
+.aliq--text-button {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
